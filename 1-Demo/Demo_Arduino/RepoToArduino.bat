@@ -6,8 +6,7 @@ set WinMergeUExe=%ProgramFiles%\WinMerge\WinMergeU.exe
 echo WinMergeUExe=%WinMergeUExe%
 
 :: https://manual.winmerge.org/en/Command_line.html
-::start "WinMergeU.exe" cmd /c 
-"C:\Program Files\WinMerge\WinMergeU.exe" /r /f "Exclude Source Control" /wr "%CD%" "%USERPROFILE%\Documents\Arduino"
+start "WinMergeU.exe" "C:\Program Files\WinMerge\WinMergeU.exe" /r /f "Exclude Source Control" /wr "%CD%" "%USERPROFILE%\Documents\Arduino"
 
 :END
 echo --------------------------------------------------------------------------------
