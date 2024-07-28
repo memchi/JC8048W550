@@ -155,7 +155,7 @@ void setup()
   Serial.println("Not ESP32: malloc");
   disp_draw_buf = (lv_color_t *)malloc(sizeof(lv_color_t) * screenWidth * screenHeight/4);
 #endif
-  Serial.println("if (!disp_draw_buf");
+  Serial.println("if (!disp_draw_buf)");
   if (!disp_draw_buf)
   {
     Serial.println("LVGL disp_draw_buf allocate failed!");
